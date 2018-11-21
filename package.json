@@ -1,0 +1,37 @@
+{
+  "name": "sqliteelectron",
+  "productName": "sqlite-electron",
+  "version": "1.0.0",
+  "description": "Usar sqlite con electron",
+  "main": "main.js",
+  "scripts": {
+    "test": "test main.js",
+    "start": "electron .",
+    "rebuild": "electron-rebuild -f -w sqlite3",
+    "package-win": "node build.js",
+    "setup": "node createinstaller.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/mjcarok/sqlite-electron/src"
+  },
+  "keywords": [
+    "SQLite",
+    "Electron",
+    "Express"
+  ],
+  "author": "Manuel Caroca",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "push.js": "^1.0.9",
+    "sqlite3": "^3.1.8"
+  },
+  "devDependencies": {
+    "electron": "^1.4.16",
+    "electron-packager": "^12.2.0",
+    "electron-rebuild": "^1.5.7",
+    "electron-squirrel-startup": "^1.0.0",
+    "electron-winstaller": "^2.7.0"
+  }
+}
